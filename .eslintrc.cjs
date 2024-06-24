@@ -10,7 +10,6 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:jest/recommended',
     'plugin:jest-dom/recommended',
-    'plugin:react/jsx-runtime',
     'prettier',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs', 'coverage'],
