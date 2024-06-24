@@ -13,7 +13,7 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'prettier',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  ignorePatterns: ['dist', '.eslintrc.cjs', 'coverage'],
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   settings: { react: { version: '18.2' } },
   plugins: ['react-refresh', 'simple-import-sort', 'jsx-a11y', 'import'],
