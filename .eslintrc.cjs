@@ -8,8 +8,6 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:import/recommended',
-    'plugin:jest/recommended',
-    'plugin:jest-dom/recommended',
     'prettier',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs', 'coverage'],
@@ -40,7 +38,11 @@ module.exports = {
   overrides: [
     {
       files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
-      extends: ['plugin:testing-library/react'],
+      extends: [
+        'plugin:testing-library/react',
+        'plugin:jest/recommended',
+        'plugin:jest-dom/recommended',
+      ],
     },
   ],
 };
